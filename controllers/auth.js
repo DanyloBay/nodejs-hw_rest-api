@@ -69,7 +69,7 @@ const resendVerifyEmail = async (req, res) => {
     throw errorHandler(401, "Email not found");
   }
 
-  if (user.vefify) {
+  if (user.verify) {
     throw errorHandler(401, "Email already verified");
   }
 
